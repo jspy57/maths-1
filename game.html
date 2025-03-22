@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Jeux</title>
+<style>
+    body {
+        background-color: rgb(5, 5, 44);
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+    
+    
+
+    .stylish-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: linear-gradient(45deg, #270d64, #ee0979);
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    .stylish-btn:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    .hidden {
+        display: none;
+    }
+    form {
+        background: linear-gradient(45deg, #270d64, #ee0979);
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+ left: 500px;
+}
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <div class="parallax"></div>
+    <form id="form" role="search">
+        <input type="search" id="query" name="q"
+         placeholder="Search..."
+         aria-label="Search through site content">
+       
+      </form>
+      
+     
+    <div id="accueil">
+        <button class="stylish-btn" onclick="afficherJeu('cookieClicker')">🍪 Cookie Clicker 🍪</button>
+        <button class="stylish-btn" onclick="afficherJeu('capybaraClicker')">Capybara Clicker</button>
+        <button class="stylish-btn" onclick="afficherJeu('flappyBird')">🐦 Flappy Bird</button>
+        <button class="stylish-btn" onclick="afficherJeu('blockNinja')">🗡️ Block Ninja</button>
+        <button class="stylish-btn" onclick="afficherJeu('marioFPS')">🔫 Mario FPS</button>
+        <button class="stylish-btn" onclick="afficherJeu('sonicMario')">🌀 Sonic Mario</button>
+        <button class="stylish-btn" onclick="afficherJeu('paqueman')">Pac-Man</button>
+        <button class="stylish-btn" onclick="afficherJeu('gta')">🚗 GTA 🏍️</button>
+        <button class="stylish-btn" onclick="afficherJeu('amoungus')">❤️‍🔥 Among Us ❤️‍🔥</button>
+        <button class="stylish-btn" onclick="afficherJeu('subway surfers')">🚅subway surfers🚆</button>
+        <button class="stylish-btn" onclick="afficherJeu('géométry ball')">⚽géometry balls🟥</button>
+        <button class="stylish-btn" onclick="afficherJeu('noob parkour 3d')">Noob parkour 🤌🗣️🗣️</button>
+        <button class="stylish-btn" onclick="afficherJeu('coke clike')">cookie Clicker(original)</button>
+        <button class="stylish-btn" onclick="afficherJeu('stikman minecraft')">💎stickman minecraft💎</button>
+        <button class="stylish-btn" onclick="afficherJeu('sonic')">USA sonic </button>
+        <button class="stylish-btn" onclick="afficherJeu('morio')">marioh🍄 </button>
+        <button class="stylish-btn" onclick="afficherJeu('sonic frontiers')">sonic frontiers😏</button>
+      
+    </div>
+
+    <div id="jeuContainer" class="hidden">
+        <!-- Chaque iframe stocke son URL d'origine dans data-src -->
+        <iframe id="cookieClicker" class="hidden" data-src="https://scratch.mit.edu/projects/1129073214/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+        <iframe id="capybaraClicker" class="hidden" data-src="https://www.addictinggames.com/embed/html5-games/16711" width="800" height="600" frameborder="0" scrolling="no" style="border:none;"></iframe>
+
+        <iframe id="flappyBird" class="hidden" data-src="https://funhtml5games.com?embed=flappytrump" style="width:800px;height:520px;border:none;" frameborder="0" scrolling="no"></iframe>
+
+        <iframe id="blockNinja" class="hidden" data-src="https://funhtml5games.com?embed=blockninja" style="width:750px;height:500px;border:none;" frameborder="0" scrolling="no"></iframe>
+
+        <iframe id="marioFPS" class="hidden" data-src="https://funhtml5games.com?embed=mariofps" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+
+        <iframe id="sonicMario" class="hidden" data-src="https://funhtml5games.com?embed=sonicmario" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        
+        <iframe id="paqueman" class="hidden" data-src="https://funhtml5games.com?embed=pacmandash" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        
+        <iframe id="gta" class="hidden" data-src="https://html5.gamedistribution.com/828864726be944c2bff67fa68d505e96/?gd_sdk_referrer_url=https://gamedistribution.com/games/gta:-grand-vegas-crime/" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        
+        <iframe id="amoungus" class="hidden" data-src="https://html5.gamemonetize.co/3iaqi4b196ujgycgvjnxhegwcj0y4617/" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        <iframe id="subway surfers" class="hidden" data-src="https://html5.gamemonetize.co/du2cejdc5we8szc7vgfdatel08oxr0zg/" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        <iframe id="géométry ball" class="hidden" data-src="https://html5.gamedistribution.com/b94a8549d5b5405eb640d0b242638055/?gd_sdk_referrer_url=https://gamedistribution.com/games/geometry-vibes-x-ball/" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        <iframe id="noob parkour 3d" class="hidden" data-src="https://html5.gamemonetize.co/htofpwmn934wo9eewdfdlnx0xf7fykbc/" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        <iframe id="coke clike" class="hidden" data-src="https://html5.gamemonetize.co/z5n072q7gj0w969r5ul4ignnxe0fzsun/" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        <iframe id="stikman minecraft" class="hidden" data-src="https://www.crazygames.fr/embed/stickman-epic" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+        <iframe id="sonic" class="hidden" data-src="https://www.retrogames.cc/embed/30899-sonic-the-hedgehog-usa-europe.html" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+       <iframe id="morio" class="hidden" data-src="https://www.retrogmes.cc/embed/42869-super-mario-3-crowned-koopapeach.html" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+       <iframe id="sonic frontiers" class="hidden" data-src="https://html5.gamemonetize.co/f0bqmxcgegzqs1msrn4dvjvjpu2anr95/" style="width:640px;height:480px;border:none;" frameborder="0" scrolling="no"></iframe>
+       
+        <!-- Bouton pour quitter qui recharge la page -->
+        <button class="stylish-btn" onclick="retourAccueil()">⬅ Quitter</button>
+    </div>
+
+    <script>
+        // Fonction qui affiche le jeu et réaffecte le src depuis data-src
+        function afficherJeu(jeu) {
+            document.getElementById("accueil").style.display = "none";
+            document.getElementById("jeuContainer").style.display = "block";
+
+            let jeux = ["cookieClicker", "capybaraClicker", "flappyBird", "blockNinja", "marioFPS", "sonicMario", "paqueman", "gta", "amoungus"];
+            jeux.forEach(id => {
+                let iframe = document.getElementById(id);
+                iframe.classList.add("hidden");
+            });
+
+            // Pour le jeu sélectionné, réaffecte son URL
+            let selected = document.getElementById(jeu);
+            selected.src = selected.getAttribute("data-src");
+            selected.classList.remove("hidden");
+        }
+
+       
+        function retourAccueil() {
+            location.reload();
+        }
+    </script>
+
+</body>
+</html>
